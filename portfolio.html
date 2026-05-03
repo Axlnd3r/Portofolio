@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Matthew Alexander — Portfolio</title>
+<meta name="description" content="Matthew Alexander Sujanto — Machine Learning, Backend, and Blockchain. Final-year Informatics student & builder." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- ============================================================ NAV -->
+<nav class="nav">
+  <a href="#top" class="nav-brand"><span class="dot">.</span>matthew<span style="color: rgb(255, 255, 255)"></span></a>
+  <div class="nav-links">
+    <a href="#work" style="color: rgb(255, 255, 255)">work</a>
+    <a href="#about" style="color: rgb(255, 255, 255)">about</a>
+    <a href="#experience" style="color: rgb(255, 255, 255)">experience</a>
+    <a href="#contact" style="color: rgb(255, 255, 255)">contact</a>
+    <a href="#contact" class="cta">say hello</a>
+  </div>
+</nav>
+
+<!-- Tweaks panel -->
+<div id="tweaks-panel" class="twk-panel" hidden>
+  <div class="twk-hd">
+    <b>tweaks</b>
+    <button class="twk-x" id="twk-close">×</button>
+  </div>
+  <div class="twk-body">
+    <div class="twk-section">mood</div>
+    <div class="twk-seg" data-tweak="mood">
+      <button data-val="dark">dark</button>
+      <button data-val="light">light</button>
+      <button data-val="amber">amber</button>
+    </div>
+    <div class="twk-hint">recolors the entire site palette &amp; accent.</div>
+
+    <div class="twk-section">energy</div>
+    <div class="twk-seg" data-tweak="energy">
+      <button data-val="calm">calm</button>
+      <button data-val="kinetic">kinetic</button>
+      <button data-val="chaotic">chaotic</button>
+    </div>
+    <div class="twk-hint">how aggressive the project panels swipe, tilt &amp; rotate.</div>
+
+    <div class="twk-section">type voice</div>
+    <div class="twk-seg" data-tweak="voice">
+      <button data-val="technical">technical</button>
+      <button data-val="editorial">editorial</button>
+      <button data-val="brutalist">brutalist</button>
+    </div>
+    <div class="twk-hint">swaps the display family, casing &amp; tracking.</div>
+  </div>
+</div>
+
+<!-- ============================================================ HERO -->
+<header class="hero" id="top" data-screen-label="hero">
+  <div class="hero-container">
+    <div class="hero-meta-top">
+      <div class="role">
+        machine learning · backend · blockchain — building useful things with code, ai, and on‑chain logic.
+      </div>
+      <div class="year" style="color: rgb(178, 59, 60)"> porto.</div>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line" data-accent="learning,blockchain">matthew</span>
+      <span class="line" data-accent="learning">alexander</span>
+    </h1>
+
+    <div class="hero-meta-bottom">
+      <div class="item">
+        <div class="label">role</div>
+        <div class="value">final‑year informatics student<br>ml / backend / web3 engineer</div>
+      </div>
+      <div class="item">
+        <div class="label">based in</div>
+        <div class="value"><span class="pulse"></span>kudus, indonesia<br><span id="hero-time">—</span></div>
+      </div>
+      <div class="item">
+        <div class="label">availability</div>
+        <div class="value">open to internships<br>&amp; full‑time roles · 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">machine learning <span class="dot">●</span> backend engineering <span class="dot">●</span> blockchain <span class="dot">●</span> python <span class="dot">●</span> typescript <span class="dot">●</span> solidity <span class="dot">●</span></span>
+    <span class="marquee-item">machine learning <span class="dot">●</span> backend engineering <span class="dot">●</span> blockchain <span class="dot">●</span> python <span class="dot">●</span> typescript <span class="dot">●</span> solidity <span class="dot">●</span></span>
+  </div>
+</div>
+
+<!-- ============================================================ ABOUT -->
+<section id="about" data-screen-label="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="dot-label">about</span>
+      <span class="dot-label">01 / 04</span>
+    </div>
+
+    <div class="about-grid reveal">
+      <div class="about-cell">
+        <span class="dot-label">experience</span>
+        <div class="big">fresh graduate</div>
+      </div>
+      <div class="about-cell">
+        <span class="dot-label">location</span>
+        <div class="big">kudus, id<br><span style="color:var(--fg-mute); font-size: 0.55em;">(gmt+7)</span></div>
+      </div>
+      <div class="about-cell">
+        <span class="dot-label">status</span>
+        <div class="big">available<br><span style="color:var(--accent); font-size: 0.55em;">for hire</span></div>
+      </div>
+    </div>
+
+    <div class="about-text-row reveal delay-1">
+      <div class="about-text-cell label">
+        <span class="dot-label">hello.</span>
+      </div>
+      <div class="about-text-cell">
+        <p>i'm matthew — a final‑year informatics student at <span class="accent">duta wacana christian university</span> with a 3.56 gpa and a habit of shipping things that span ml, backend services, and blockchain.</p>
+        <p>i graduated from <span class="accent">google bangkit academy 2024</span> on the machine learning path, hold an it specialist (python) certification, and have led a capstone team building real‑time object detection on android.</p>
+        <p>recently i've been writing solidity for hackathons, building laravel expert systems, and turning research papers into running code.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ WORK -->
+<section id="work" data-screen-label="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="dot-label">selected work</span>
+      <span class="dot-label">02 / 04</span>
+    </div>
+
+    <div class="projects-list">
+      <!-- 1 -->
+      <a class="project reveal" href="work/runera.html" style="--proj-color: oklch(0.72 0.18 50);">
+        <div class="project-bg"></div>
+        <div class="project-preview" data-placeholder="runera"><img src="work/assets/runera.png" alt="runera screenshot" /></div>
+        <div class="project-inner">
+          <div class="project-meta-row">
+            <span class="year">2026</span>
+            <span class="tag">web3 / backend</span>
+          </div>
+          <div class="project-title-row">
+            <h3 class="project-title">runera</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2 -->
+      <a class="project reveal" href="work/aegisoe.html" style="--proj-color: oklch(0.72 0.18 260);">
+        <div class="project-bg"></div>
+        <div class="project-preview" data-placeholder="aegisoe"><img src="work/assets/aegisoe.png" alt="aegisoe screenshot" /></div>
+        <div class="project-inner">
+          <div class="project-meta-row">
+            <span class="year">2026</span>
+            <span class="tag"> privacy/ backend</span>
+          </div>
+          <div class="project-title-row">
+            <h3 class="project-title">aegisoe</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3 -->
+      <a class="project reveal" href="work/resistor-lab.html" style="--proj-color: oklch(0.86 0.15 110);">
+        <div class="project-bg"></div>
+        <div class="project-preview" data-placeholder="resistor lab"><img src="work/assets/resistor-lab.png" alt="resistor lab logo" /></div>
+        <div class="project-inner">
+          <div class="project-meta-row">
+            <span class="year">2024</span>
+            <span class="tag">computer vision</span>
+          </div>
+          <div class="project-title-row">
+            <h3 class="project-title">resistor lab</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4 -->
+      <a class="project reveal" href="work/membership-reminder.html" style="--proj-color: oklch(0.78 0.14 25);">
+        <div class="project-bg"></div>
+        <div class="project-preview" data-placeholder="membership reminder"><img src="work/assets/membership-reminder.jpeg" alt="tegel screenshot" /></div>
+        <div class="project-inner">
+          <div class="project-meta-row">
+            <span class="year">2024</span>
+            <span class="tag">desktop / java</span>
+          </div>
+          <div class="project-title-row">
+            <h3 class="project-title">membership reminder</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ EXPERIENCE -->
+<section id="experience" data-screen-label="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="dot-label">experience &amp; education</span>
+      <span class="dot-label">03 / 04</span>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-row reveal">
+        <div class="timeline-when">aug — dec 2025</div>
+        <div class="timeline-what">
+          <h3>system developer · internship</h3>
+          <div class="timeline-where">duta wacana christian university — faculty research</div>
+          <p class="timeline-desc">built a case‑based reasoning module on top of a laravel expert system. shipped a hybrid jaccard + cosine similarity algorithm for multi‑attribute case retrieval and ranked results.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="chip">laravel</span>
+          <span class="chip">php</span>
+          <span class="chip">cbr</span>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-when">feb — may 2026</div>
+        <div class="timeline-what">
+          <h3>teaching assistant · sap practicum (s2)</h3>
+          <div class="timeline-where">duta wacana christian university</div>
+          <p class="timeline-desc">returned for a second session as ta — refined the practicum brief, added new case studies on procurement and sales cycles, and ran weekly office hours for 30+ students.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="chip">sap</span>
+          <span class="chip">teaching</span>
+          <span class="chip">mentoring</span>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-when">sep — dec 2025</div>
+        <div class="timeline-what">
+          <h3>teaching assistant · sap practicum (s1)</h3>
+          <div class="timeline-where">duta wacana christian university</div>
+          <p class="timeline-desc">guided students through sap01 fundamentals — navigation, erp business processes (logistics, financials, hcm), and end‑to‑end practicum assignments.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="chip">sap</span>
+          <span class="chip">teaching</span>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-when">jan 2025</div>
+        <div class="timeline-what">
+          <h3>machine learning specialization · graduate</h3>
+          <div class="timeline-where">bangkit academy 2024 — google · goto · traveloka</div>
+          <p class="timeline-desc">completed the full machine learning path; capstone team led the resistor lab object detection android app on tensorflow lite.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="chip">tensorflow</span>
+          <span class="chip">android</span>
+          <span class="chip">python</span>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-when">may 2023</div>
+        <div class="timeline-what">
+          <h3>globees u‑change · cultural exchange</h3>
+          <div class="timeline-where">international university program — taiwan</div>
+          <p class="timeline-desc">represented indonesia in a multinational cultural exchange. delivered presentations on indonesian culture, joined sustainability workshops, and collaborated cross‑culturally with students from multiple countries.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="chip">leadership</span>
+          <span class="chip">communication</span>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-when">aug 2022 — apr 2026</div>
+        <div class="timeline-what">
+          <h3>b.sc. informatics</h3>
+          <div class="timeline-where">duta wacana christian university (ukdw), yogyakarta</div>
+          <p class="timeline-desc">gpa 3.56 / 4.00 · undergraduate thesis on hybrid fuzzy topsis inference engines for case‑based reasoning.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="chip">cs</span>
+          <span class="chip">research</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ SKILLS -->
+<section id="skills" data-screen-label="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="dot-label">stack</span>
+      <span class="dot-label">04 / 04</span>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-block">
+        <span class="dot-label">languages</span>
+        <div class="skill-list">
+          <span class="skill-tag">python</span>
+          <span class="skill-tag">javascript</span>
+          <span class="skill-tag">typescript</span>
+          <span class="skill-tag">java</span>
+          <span class="skill-tag">php</span>
+          <span class="skill-tag">solidity</span>
+          <span class="skill-tag">html / css</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <span class="dot-label">machine learning</span>
+        <div class="skill-list">
+          <span class="skill-tag">tensorflow</span>
+          <span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">numpy</span>
+          <span class="skill-tag">pandas</span>
+          <span class="skill-tag">fuzzy logic</span>
+          <span class="skill-tag">topsis</span>
+          <span class="skill-tag">case‑based reasoning</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <span class="dot-label">backend</span>
+        <div class="skill-list">
+          <span class="skill-tag">node.js</span>
+          <span class="skill-tag">express</span>
+          <span class="skill-tag">laravel</span>
+          <span class="skill-tag">graphql</span>
+          <span class="skill-tag">prisma</span>
+          <span class="skill-tag">rest api</span>
+          <span class="skill-tag">postgresql</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <span class="dot-label">blockchain &amp; tools</span>
+        <div class="skill-list">
+          <span class="skill-tag">solidity</span>
+          <span class="skill-tag">evm (base, core dao)</span>
+          <span class="skill-tag">git / github</span>
+          <span class="skill-tag">gcp</span>
+          <span class="skill-tag">looker studio</span>
+          <span class="skill-tag">jupyter</span>
+          <span class="skill-tag">flutter</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top: 80px;">
+      <span class="dot-label">certifications</span>
+      <span class="dot-label">certified</span>
+    </div>
+    <div class="certs-grid reveal delay-1">
+      <div class="cert-card">
+        <div>
+          <div class="when">march 2025</div>
+          <h3>it specialist — python</h3>
+        </div>
+        <div class="issuer">certiport / pearson vue · cred. wqaec‑2fvw</div>
+      </div>
+      <div class="cert-card">
+        <div>
+          <div class="when">january 2025</div>
+          <h3>machine learning specialization</h3>
+        </div>
+        <div class="issuer">bangkit academy 2024 (google · goto · traveloka)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CONTACT -->
+<section class="contact" id="contact" data-screen-label="contact">
+  <div class="container">
+    <span class="dot-label contact-eyebrow reveal">contact</span>
+    <h2 class="contact-title reveal">say <span class="accent">hello.</span></h2>
+
+    <div class="contact-row reveal delay-1">
+      <span class="dot-label">collaborate</span>
+      <p class="contact-lead">drop a line about a role, a project, or just to say hi. i reply within a day.</p>
+    </div>
+
+    <div class="socials reveal delay-2" style="margin-top: 64px;">
+      <a class="social-row" href="mailto:alexandermatt524@gmail.com">
+        <span class="label">
+          <svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14"></rect>
+            <polyline points="3,6 12,13 21,6"></polyline>
+          </svg>
+          email
+        </span>
+        <span class="target">alexandermatt524@gmail.com</span>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="social-row" href="https://www.linkedin.com/in/matthew-alexander-6b6855331" target="_blank" rel="noopener">
+        <span class="label">
+          <svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001zM3 9h4v12H3V9zm7 0h3.8v1.65h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4V9z"></path>
+          </svg>
+          linkedin
+        </span>
+        <span class="target">matthew‑alexander</span>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="social-row" href="https://github.com/Axlnd3r" target="_blank" rel="noopener">
+        <span class="label">
+          <svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.49-1.11-1.49-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0 1 12 7.07c.85.004 1.7.12 2.5.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path>
+          </svg>
+          github
+        </span>
+        <span class="target">@axlnd3r</span>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="social-row" href="tel:+6282331117077">
+        <span class="label">
+          <svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
+            <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"></path>
+          </svg>
+          phone
+        </span>
+        <span class="target">+62 823‑3111‑7077</span>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER -->
+<footer>
+  <div class="left">
+    <span>© <span id="year"></span> matthew alexander sujanto</span>
+    <span>·</span>
+    <span>kudus, id</span>
+  </div>
+  <div class="right">
+    <span>built with html, css, js</span>
+    <span>·</span>
+    <span>v1.0</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+
+<script>
+// ============================ TWEAKS ============================
+(function () {
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "mood": "light",
+    "energy": "kinetic",
+    "voice": "brutalist"
+  }/*EDITMODE-END*/;
+
+  const ENERGY_MAP = {
+    calm:    { energy: 0.4, motion: 1100 },
+    kinetic: { energy: 1.0, motion: 700 },
+    chaotic: { energy: 1.8, motion: 380 },
+  };
+
+  const state = { ...TWEAK_DEFAULTS };
+
+  function apply() {
+    const body = document.body;
+    body.dataset.mood = state.mood;
+    body.dataset.voice = state.voice;
+    const e = ENERGY_MAP[state.energy] || ENERGY_MAP.kinetic;
+    document.documentElement.style.setProperty('--energy', e.energy);
+    document.documentElement.style.setProperty('--motion-ms', e.motion);
+    // Highlight active segment buttons
+    document.querySelectorAll('.twk-seg').forEach(seg => {
+      const key = seg.dataset.tweak;
+      seg.querySelectorAll('button').forEach(b => {
+        b.classList.toggle('is-on', b.dataset.val === state[key]);
+      });
+    });
+  }
+
+  function setTweak(key, val) {
+    state[key] = val;
+    apply();
+    try {
+      window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { [key]: val } }, '*');
+    } catch (e) {}
+  }
+
+  // wire up segmented buttons
+  document.querySelectorAll('.twk-seg').forEach(seg => {
+    const key = seg.dataset.tweak;
+    seg.addEventListener('click', (ev) => {
+      const btn = ev.target.closest('button');
+      if (!btn) return;
+      setTweak(key, btn.dataset.val);
+    });
+  });
+
+  apply();
+
+  // host protocol
+  const panel = document.getElementById('tweaks-panel');
+  const closeBtn = document.getElementById('twk-close');
+  window.addEventListener('message', (ev) => {
+    const d = ev.data;
+    if (!d || typeof d !== 'object') return;
+    if (d.type === '__activate_edit_mode') panel.hidden = false;
+    if (d.type === '__deactivate_edit_mode') panel.hidden = true;
+  });
+  closeBtn.addEventListener('click', () => {
+    panel.hidden = true;
+    try { window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*'); } catch(e){}
+  });
+  try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch(e){}
+})();
+</script>
+
+<style>
+/* social row icons */
+.social-row .social-ico{
+  flex-shrink:0;
+  color:var(--accent);
+  transition:transform .25s ease, color .25s ease;
+}
+.social-row:hover .social-ico{
+  transform:translateX(2px);
+  color:var(--fg);
+}
+
+/* tweaks panel */
+.twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:260px;
+  background:rgba(15,15,15,.92);color:#f5f5f5;
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.12);border-radius:12px;
+  font:11.5px/1.4 "JetBrains Mono", ui-monospace, monospace;
+  box-shadow:0 12px 40px rgba(0,0,0,.5);text-transform:none}
+.twk-hd{display:flex;align-items:center;justify-content:space-between;
+  padding:10px 10px 10px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.twk-hd b{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(245,245,245,.6)}
+.twk-x{appearance:none;border:0;background:transparent;color:rgba(245,245,245,.55);
+  width:22px;height:22px;border-radius:6px;cursor:pointer;font-size:16px;line-height:1}
+.twk-x:hover{background:rgba(255,255,255,.08);color:#fff}
+.twk-body{padding:14px;display:flex;flex-direction:column;gap:6px}
+.twk-section{font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(245,245,245,.45);margin-top:6px;margin-bottom:4px}
+.twk-section:first-child{margin-top:0}
+.twk-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
+  background:rgba(255,255,255,.06);border-radius:8px;padding:2px}
+.twk-seg button{appearance:none;border:0;background:transparent;color:rgba(245,245,245,.6);
+  font:inherit;padding:7px 4px;border-radius:6px;cursor:pointer;text-align:center;
+  transition:background .2s ease,color .2s ease}
+.twk-seg button:hover{color:#fff}
+.twk-seg button.is-on{background:rgba(255,255,255,.14);color:#fff}
+.twk-hint{font-size:10.5px;color:rgba(245,245,245,.4);margin-top:2px;line-height:1.45}
+</style>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>runera — matthew alexander</title>
+<meta name="description" content="Runera — your gentle running companion. Track runs, build streaks, collect rewards." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="work.css" />
+<style>
+  :root { --proj: oklch(0.62 0.20 255); }
+</style>
+</head>
+<body class="work-page" data-mood="light" data-voice="brutalist">
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- back bar -->
+<nav class="work-back-bar">
+  <a class="back-link" href="../portfolio.html#work">
+    <span class="arrow">←</span> back to work
+  </a>
+  <span class="back-meta"><span class="dot">.</span>01 / 04 — runera</span>
+</nav>
+
+<!-- hero -->
+<header class="work-hero">
+  <div class="container">
+    <div class="work-eyebrow reveal">
+      <span class="dot-label">selected work — 01</span>
+      <div class="meta-group">
+        <span><span class="k">year</span> 2026</span>
+        <span><span class="k">role</span> full-stack &amp; web3</span>
+        <span><span class="k">stack</span> next.js · privy · solidity</span>
+        <span><span class="k">status</span> live</span>
+      </div>
+    </div>
+
+    <h1 class="work-title reveal delay-1">
+      runera<span class="accent">.</span>
+    </h1>
+
+    <p class="work-summary reveal delay-2">
+      a gentle running companion. track your runs, build streaks, and collect on‑chain rewards — at your own pace.
+    </p>
+
+    <div class="work-cta-row reveal delay-3">
+      <a class="work-cta is-primary" href="https://runera-project.vercel.app/login" target="_blank" rel="noopener">
+        visit runera <span class="arrow">↗</span>
+      </a>
+      <a class="work-cta" href="#overview">
+        read the breakdown <span class="arrow">↓</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- hero visual -->
+<div class="work-visual reveal">
+  <div class="work-visual-frame">
+    <span class="corner tl"><span style="color: var(--proj)">.</span> screenshot · login</span>
+    <span class="corner tr">runera-project.vercel.app</span>
+    <span class="corner bl">2026 · v1</span>
+    <span class="corner br">web3 / next</span>
+    <div class="visual-inner">
+      <div class="viz-screenshot">
+        <img src="assets/runera.png" alt="runera login screen" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- overview -->
+<section class="work-section" id="overview">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 32px;">
+      <span class="dot-label">overview</span>
+    </div>
+    <div class="work-2col reveal delay-1">
+      <div class="cell label">
+        <span class="dot-label">the idea.</span>
+      </div>
+      <div class="cell">
+        <p>most run-trackers turn the hobby into a leaderboard. <span class="accent">runera</span> goes the other way — a calm, encouraging companion that rewards consistency over speed.</p>
+        <p>each run logged builds a <span class="accent">streak</span>; each streak unlocks <span class="accent">unique on‑chain collectibles</span> minted to the runner's wallet, claimable directly from the dashboard.</p>
+        <p>auth is email‑and‑google through privy, so non‑crypto users never see a seed phrase. the wallet is provisioned silently in the background.</p>
+      </div>
+    </div>
+
+    <div class="work-stats reveal delay-2">
+      <div class="stat">
+        <div class="num"><span class="accent">5</span> tiers</div>
+        <div class="lbl">streak collectibles</div>
+      </div>
+      <div class="stat">
+        <div class="num">0 fee</div>
+        <div class="lbl">gas-sponsored mints</div>
+      </div>
+      <div class="stat">
+        <div class="num">~3s</div>
+        <div class="lbl">login → dashboard</div>
+      </div>
+      <div class="stat">
+        <div class="num">privy</div>
+        <div class="lbl">embedded wallets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- what i built -->
+<section class="work-section">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 8px;">
+      <span class="dot-label">what i built</span>
+    </div>
+    <h2 class="work-h2 reveal">the system, end to end.</h2>
+
+    <div class="feat-list">
+      <div class="feat-row reveal">
+        <div class="num">01</div>
+        <div>
+          <h3>frictionless onboarding</h3>
+          <p>email or google sign-in via privy. a wallet is created silently behind the scenes so the user never has to think about keys, gas, or chains.</p>
+        </div>
+        <div class="feat-tags">
+          <span class="chip">privy</span>
+          <span class="chip">oauth</span>
+        </div>
+      </div>
+
+      <div class="feat-row reveal">
+        <div class="num">02</div>
+        <div>
+          <h3>run logging &amp; streaks</h3>
+          <p>users log runs by distance and pace. a backend job recomputes streak state nightly and pushes streak‑broken / streak‑grew events back to the client.</p>
+        </div>
+        <div class="feat-tags">
+          <span class="chip">postgres</span>
+          <span class="chip">cron</span>
+        </div>
+      </div>
+
+      <div class="feat-row reveal">
+        <div class="num">03</div>
+        <div>
+          <h3>collectible rewards</h3>
+          <p>each streak tier maps to a unique nft. on tier-up the contract mints to the user's embedded wallet, gas sponsored. all five tiers are visible from the dashboard with a soft “locked” state for ones not yet earned.</p>
+        </div>
+        <div class="feat-tags">
+          <span class="chip">solidity</span>
+          <span class="chip">erc-721</span>
+        </div>
+      </div>
+
+      <div class="feat-row reveal">
+        <div class="num">04</div>
+        <div>
+          <h3>gentle ui</h3>
+          <p>soft blues and pastel orbs, large copy, no aggressive ranking. the marketing surface frames the product as a companion, not a coach. zero leaderboard.</p>
+        </div>
+        <div class="feat-tags">
+          <span class="chip">ui design</span>
+          <span class="chip">copywriting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- stack -->
+<section class="work-section">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 32px;">
+      <span class="dot-label">stack</span>
+    </div>
+    <div class="stack-grid reveal delay-1">
+      <div class="stack-cell">
+        <span class="dot-label">frontend</span>
+        <div class="skill-list">
+          <span class="skill-tag">next.js 14</span>
+          <span class="skill-tag">tailwind</span>
+          <span class="skill-tag">privy sdk</span>
+          <span class="skill-tag">framer motion</span>
+        </div>
+      </div>
+      <div class="stack-cell">
+        <span class="dot-label">backend</span>
+        <div class="skill-list">
+          <span class="skill-tag">node.js</span>
+          <span class="skill-tag">prisma</span>
+          <span class="skill-tag">postgresql</span>
+          <span class="skill-tag">cron jobs</span>
+        </div>
+      </div>
+      <div class="stack-cell">
+        <span class="dot-label">on-chain</span>
+        <div class="skill-list">
+          <span class="skill-tag">solidity</span>
+          <span class="skill-tag">erc-721</span>
+          <span class="skill-tag">base sepolia</span>
+          <span class="skill-tag">gas sponsorship</span>
+        </div>
+      </div>
+      <div class="stack-cell">
+        <span class="dot-label">ops</span>
+        <div class="skill-list">
+          <span class="skill-tag">vercel</span>
+          <span class="skill-tag">github actions</span>
+          <span class="skill-tag">supabase</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- next -->
+<section class="next-project">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 18px;">
+      <span class="dot-label">next project</span>
+    </div>
+    <a class="next-link reveal delay-1" href="aegisoe.html" style="--proj-next: oklch(0.72 0.18 50);">
+      <div class="next-bg"></div>
+      <div class="meta-row">
+        <span class="year">2026</span>
+        <span class="tag">privacy / backend</span>
+      </div>
+      <div class="title-row">
+        <h3>aegisoe</h3>
+        <span class="arrow">↗</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="left">
+    <span>© 2026 matthew alexander sujanto</span>
+    <span>·</span>
+    <span>kudus, id</span>
+  </div>
+  <div class="right">
+    <a href="../portfolio.html#work" style="color: var(--fg-mute);">← all work</a>
+  </div>
+</footer>
+
+<script src="work.js"></script>
+</body>
+</html>
